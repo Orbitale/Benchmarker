@@ -1,0 +1,19 @@
+{
+    "name": "orbitale/benchmarker",
+    "type": "project",
+    "license": "MIT",
+    "description": "A simple script that can benchmark PHP scripts.",
+    "keywords": ["benchmark", "php"],
+    "require": {
+        "symfony/console": "^4.1",
+        "symfony/process": "^4.1"
+    },
+    "bin": [
+        "bin/benchmarker"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Orbitale\\Benchmarker\\": "src/"
+        }
+    }
+}

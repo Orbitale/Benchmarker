@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use Orbitale\Benchmarker\Command\BenchmarkRunCommand;
+use Orbitale\Benchmarker\Command\BenchmarkCreateCommand;
+use Orbitale\Benchmarker\Command\BenchmarkParallelizeCommand;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+set_time_limit(0);
+
+require __DIR__.'/../vendor/autoload.php';
+
+$application = new Application('benchmarker', '0.1');
+$application->addCommands([
+    new BenchmarkRunCommand(getcwd()),
+    new BenchmarkCreateCommand(getcwd()),
+    new BenchmarkParallelizeCommand(getcwd(), __FILE__),
+]);
+$application->run(new ArgvInput());
