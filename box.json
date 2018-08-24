@@ -1,0 +1,34 @@
+{
+    "alias": "benchmarker.phar",
+    "directories": [
+        "src/"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                ".gitignore",
+                ".md",
+                "phpunit",
+                "Tester",
+                "Tests",
+                "tests",
+                "yaml"
+            ],
+            "in": "vendor"
+        }
+    ],
+    "compactors": [
+        "Herrera\\Box\\Compactor\\Json",
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "files": [
+        "LICENSE"
+    ],
+    "compression": "GZ",
+    "git-version": "package_version",
+    "main": "bin/benchmarker",
+    "output": "benchmarker.phar",
+    "chmod": "0755",
+    "stub": true
+}

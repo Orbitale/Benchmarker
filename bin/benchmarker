@@ -15,6 +15,6 @@ $application = new Application('benchmarker', '0.1');
 $application->addCommands([
     new BenchmarkRunCommand(getcwd()),
     new BenchmarkCreateCommand(getcwd()),
-    new BenchmarkParallelizeCommand(getcwd(), __FILE__),
+    new BenchmarkParallelizeCommand(getcwd(), $_SERVER['argv'][0]),
 ]);
 $application->run(new ArgvInput());
