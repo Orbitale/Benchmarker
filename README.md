@@ -5,11 +5,10 @@ A simple PHP tool to benchmark PHP scripts.
 
 ## Install
 
-⚠️ For now the project is in alpha (and nothing says whether it'll be "stable" one day) and Phar files will be used to
-release it.
+You can install Benchmarker in different ways:
 
-If you still want to give it a try, there are many ways to do so:
-
+* Using the `phar` file. Go to the [Releases](https://github.com/Orbitale/Benchmarker/releases) page and download the
+latest `benchmarker.phar` archive.
 * In an existing project:
   ```
   $ composer require orbitale/benchmarker
