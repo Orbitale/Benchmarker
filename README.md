@@ -79,3 +79,5 @@ You can see more examples in the [examples](examples) directory.
 ## More
 
 More coming soon! Stay tuned 😉
+
+This project is highly inspired by http://www.php-benchmark-script.com/ from which the source code is based a little.
