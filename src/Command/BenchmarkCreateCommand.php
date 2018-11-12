@@ -124,7 +124,7 @@ HELP
             throw new \RuntimeException(\sprintf('Directory "%s" could not be created', $directory));
         }
 
-        \ile_put_contents($realFilename, $fileContent, LOCK_EX);
+        \file_put_contents($realFilename, $fileContent, LOCK_EX);
 
         $io->success("Created benchmark at $realFilename");
     }
