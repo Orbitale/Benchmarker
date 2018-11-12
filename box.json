@@ -28,7 +28,7 @@
     "compression": "GZ",
     "git-version": "package_version",
     "main": "bin/benchmarker",
-    "output": "benchmarker.phar",
+    "output": "build/benchmarker.phar",
     "chmod": "0755",
     "stub": true
 }

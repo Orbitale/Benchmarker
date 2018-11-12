@@ -26,10 +26,44 @@ latest `benchmarker.phar` archive.
   $ cd benchmarker/
   $ php bin/benchmarker
   ```
+* By building the `.phar` file manually with [Box](https://github.com/box-project/box2):
+  ```
+  # Install the project in any directory via "composer create" or "git clone"
+  $ box build
+  # Find the file in build/benchmarker.phar
+  ```
 
 ## Usage
 
-Basically there are two ways to use it: **sequential** or **parallel** execution.
+### Create tests
+
+You can use this command to create test files:
+ 
+```
+$ benchmarker create test_file.php
+
+ No test names provided
+
+ Provide a name for one test (or leave empty if you have finished)::
+ > first test
+
+ Provide a name for one test (or leave empty if you have finished)::
+ > second test
+
+ Provide a name for one test (or leave empty if you have finished)::
+ >
+ 
+
+ [OK] Created benchmark at test_file.php
+
+
+```
+
+See [File Format](#file-format) to know what the file will look like and how to create tests in them.
+
+### Running the tests
+
+There are two ways to use the benchmarker: **sequential** or **parallel** execution.
 
 ### Sequential
 
@@ -75,9 +109,8 @@ return (function(){
 
 You can see more examples in the [examples](examples) directory.
 
-
 ## More
 
 More coming soon! Stay tuned 😉
 
-This project is highly inspired by http://www.php-benchmark-script.com/ from which the source code is based a little.
+This project is highly inspired by http://www.php-benchmark-script.com/ from which the source code is based.
